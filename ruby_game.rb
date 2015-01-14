@@ -26,7 +26,7 @@ greeting
 chances = 5
 random_number = rand(1..100)
 puts "#{random_number} is secret number"
-while chances > 0
+while chances < 6 && until chances == 0
   guess_number(random_number)
-chances = chances +1
+end
 end
